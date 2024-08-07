@@ -1,5 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-
 const Header = () => {
   return (
     <header className="p-3 text-bg-dark">
@@ -16,33 +14,33 @@ const Header = () => {
               role="alt"
               aria-label="Bootstrap"
             >
-              <use xlinkHref="#bootstrap"></use>
+              <use xlinkHref="/#bootstrap"></use>
             </svg>
           </a>
 
           <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li>
-              <a href="#" className="nav-link px-2 text-secondary">
+              <a href="/#" className="nav-link px-2 text-secondary">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="nav-link px-2 text-white">
+              <a href="/#" className="nav-link px-2 text-white">
                 Features
               </a>
             </li>
             <li>
-              <a href="#" className="nav-link px-2 text-white">
+              <a href="/#" className="nav-link px-2 text-white">
                 Pricing
               </a>
             </li>
             <li>
-              <a href="#" className="nav-link px-2 text-white">
+              <a href="/#" className="nav-link px-2 text-white">
                 FAQs
               </a>
             </li>
             <li>
-              <a href="#" className="nav-link px-2 text-white">
+              <a href="/#" className="nav-link px-2 text-white">
                 About
               </a>
             </li>

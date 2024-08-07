@@ -1,9 +1,8 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 const CreatePost = () => {
   return (
     <form>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">
+        <label htmlFor="exampleInputEmail1" class="form-label">
           Email address
         </label>
         <input
@@ -17,7 +16,7 @@ const CreatePost = () => {
         </div>
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">
+        <label htmlFor="exampleInputPassword1" class="form-label">
           Password
         </label>
         <input
@@ -28,7 +27,7 @@ const CreatePost = () => {
       </div>
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">
+        <label class="form-check-label" htmlFor="exampleCheck1">
           Check me out
         </label>
       </div>
