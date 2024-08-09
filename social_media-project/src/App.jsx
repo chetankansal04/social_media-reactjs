@@ -6,19 +6,19 @@ import CreatePost from "./assets/components/CreatePost";
 import PostList from "./assets/components/PostList";
 import "./App.css";
 import { useState } from "react";
+import PostListProvider from "./assets/store/post-list-store";
 
 function App() {
   const [selectedTab, setSelectedTab] = useState("Home");
 
-  return (
+  return (<PostListProvider>
     <div className="app-container">
-      <Sidebar>
-        selectedTab={selectedTab} 
+      <Sidebar
+        selectedTab={selectedTab}
         setSelectedTab={setSelectedTab}
-      </Sidebar>
+      ></Sidebar>
       <div className="content">
         <Header></Header>
-
         {selectedTab === "Home" ? (
           <PostList></PostList>
         ) : (
@@ -27,6 +27,7 @@ function App() {
         <Footer></Footer>
       </div>
     </div>
+    </PostListProvider>
   );
 }
 export default App;

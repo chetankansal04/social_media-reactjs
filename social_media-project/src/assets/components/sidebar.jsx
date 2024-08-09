@@ -2,10 +2,10 @@ const Sidebar = ({ selectedTab, setSelectedTab }) => {
   return (
     <div
       className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar"
-      style={{ width: "280px" }}
+      style={{ width: "180px" }}
     >
       <a
-        href="#"
+        href="/"
         className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
       >
         <svg className="bi pe-none me-2" width="40" height="32">
@@ -15,19 +15,16 @@ const Sidebar = ({ selectedTab, setSelectedTab }) => {
       </a>
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
-        <li
-          className="nav-item"
-          onClick={() => {
-            console.log(setSelectedTab);
-            setSelectedTab("Home");
-          }}
-        >
+        <li className="nav-item">
           <a
-            href="#"
+            href="/#"
             className={`nav-link text-white ${
               selectedTab === "Home" && "active"
-            }`}
-            aria-current="page"
+            }
+            `}
+            onClick={() => {
+              setSelectedTab("Home");
+            }}
           >
             <svg className="bi pe-none me-2" width="16" height="16">
               <use xlinkHref="#home"></use>
@@ -35,16 +32,16 @@ const Sidebar = ({ selectedTab, setSelectedTab }) => {
             Home
           </a>
         </li>
-        <li
-          onClick={() => {
-            setSelectedTab("Create Post");
-          }}
-        >
+        <li>
           <a
-            href="#"
+            href="/#"
             className={`nav-link text-white ${
               selectedTab === "Create Post" && "active"
-            }`}
+            }
+            `}
+            onClick={() => {
+              setSelectedTab("Create Post");
+            }}
           >
             <svg className="bi pe-none me-2" width="16" height="16">
               <use xlinkHref="/#speedometer2"></use>
@@ -56,7 +53,7 @@ const Sidebar = ({ selectedTab, setSelectedTab }) => {
       <hr />
       <div className="dropdown">
         <a
-          href="#"
+          href="/#"
           className="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
           data-bs-toggle="dropdown"
           aria-expanded="false"
@@ -72,17 +69,17 @@ const Sidebar = ({ selectedTab, setSelectedTab }) => {
         </a>
         <ul className="dropdown-menu dropdown-menu-dark text-small shadow">
           <li>
-            <a className="dropdown-item" href="#">
+            <a className="dropdown-item" href="/#">
               New project...
             </a>
           </li>
           <li>
-            <a className="dropdown-item" href="#">
+            <a className="dropdown-item" href="/#">
               Settings
             </a>
           </li>
           <li>
-            <a className="dropdown-item" href="#">
+            <a className="dropdown-item" href="/#">
               Profile
             </a>
           </li>
@@ -90,7 +87,7 @@ const Sidebar = ({ selectedTab, setSelectedTab }) => {
             <hr className="dropdown-divider" />
           </li>
           <li>
-            <a className="dropdown-item" href="#">
+            <a className="dropdown-item" href="/#">
               Sign out
             </a>
           </li>
